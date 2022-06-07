@@ -1,0 +1,18 @@
+#banner{
+    position: relative;
+}
+
+#banner #text-banner{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    position: absolute; /*on retire l'élément du flow*/
+    top: 5rem;
+    left: 5em;
+    color: white;
+}
+
+#banner img{
+    border-radius: 25px;
+    opacity: 100%;
+}

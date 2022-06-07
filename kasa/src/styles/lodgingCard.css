@@ -1,0 +1,17 @@
+.card{
+    position: relative;
+}
+
+.card .cover-location{
+    width: 340px;
+    border-radius: 10px;
+}
+
+.card .name-location{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 18px;
+    color: white;
+}
