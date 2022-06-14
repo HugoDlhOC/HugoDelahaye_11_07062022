@@ -1,0 +1,55 @@
+.collapse-section{
+  display: flex;
+  flex-direction: column;
+
+  /*Bouton pour ouvrir la collapse*/
+  .collapse{
+    background-color: #FF6060;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+    margin-left: 208px;
+    margin-right: 208px;
+  }
+
+  .collapse:hover, active{
+    background-color: #FF7878;
+  }
+
+  .collapse-title{
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  /*Stylisation icone*/
+  .collapse-icon{
+    margin-left: auto;
+    transition: transform 0.8s ease;
+  }
+  /*Stylisation rotate icone*/
+  .rotation{
+    transform: rotate(180deg);
+  }
+
+  .collapse-content{
+    background-color: #F7F7F7;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    margin-bottom: 31px;
+    margin-left: 208px;
+    margin-right: 208px;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .collapse-text{
+    padding: 24px;
+    color: #FF6060;
+  }
+}

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/polices/Montserrat-VariableFont_wght.ttf");
+}
+body {
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+}
+header nav {
+  margin-left: auto;
+}
+header nav #menu {
+  list-style-type: none;
+  display: flex;
+}
+header nav #menu a {
+  text-decoration: none;
+}
+header nav #menu a #menu-home {
+  margin-right: 57px;
+}
+header nav #menu a li {
+  color: #FF6060;
+  font-size: 24px;
+}
+
+#banner {
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+#banner #text-banner {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  /*on retire l'élément du flow*/
+  top: 5rem;
+  left: 5em;
+  color: white;
+}
+#banner img {
+  border-radius: 25px;
+}
+#banner img:after {
+  content: "";
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.card a .cover-location {
+  width: 340px;
+  border-radius: 10px;
+}
+.card a .name-location {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 18px;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #logo-footer {
+  color: #61dafb;
+  width: 122px;
+  margin-top: 66px;
+}
+footer #copyrights {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 29px;
+}
+
+#lodgings-list {
+  background-color: #F7F7F7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 43px;
+  border-radius: 25px;
+}
+
+.collapse-section {
+  display: flex;
+  flex-direction: column;
+  /*Bouton pour ouvrir la collapse*/
+  /*Stylisation icone*/
+  /*Stylisation rotate icone*/
+}
+.collapse-section .collapse {
+  background-color: #FF6060;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.8s ease;
+  margin-left: 208px;
+  margin-right: 208px;
+}
+.collapse-section .collapse:hover, .collapse-section active {
+  background-color: #FF7878;
+}
+.collapse-section .collapse-title {
+  text-align: left;
+  font-size: 24px;
+  margin: 0;
+}
+.collapse-section .collapse-icon {
+  margin-left: auto;
+  transition: transform 0.8s ease;
+}
+.collapse-section .rotation {
+  transform: rotate(180deg);
+}
+.collapse-section .collapse-content {
+  background-color: #F7F7F7;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  margin-bottom: 31px;
+  margin-left: 208px;
+  margin-right: 208px;
+  border-radius: 0px 0px 5px 5px;
+}
+.collapse-section .collapse-text {
+  padding: 24px;
+  color: #FF6060;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  a{
+    .cover-location{
+      width: 340px;
+      border-radius: 10px;
+    }
+    .name-location{
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      bottom: 1rem;
+      font-size: 18px;
+      color: white;
+    }
+  }
+}
