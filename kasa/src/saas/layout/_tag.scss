@@ -1,0 +1,14 @@
+.tags{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+  .tag{
+    padding: 3px 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+  }
+}

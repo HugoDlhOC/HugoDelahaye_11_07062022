@@ -1,5 +1,5 @@
 import '../../styles/style.css';
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 export function LodgingCard({nameLocation, imgLocation, linkNumber}){
     return <div className={'card'}>
