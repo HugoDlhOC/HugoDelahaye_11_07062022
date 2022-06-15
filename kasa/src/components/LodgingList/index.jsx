@@ -6,7 +6,7 @@ export function LodgingList(props){
 
     return <section id={"lodgings-list"}>
         {logements.map((logement, index) => {
-            return <LodgingCard nameLocation={logement.title} imgLocation={logement.cover} linkNumber={index} />
+            return <LodgingCard nameLocation={logement.title} imgLocation={logement.cover} linkNumber={logement.id} />
         })}
     </section>
 }

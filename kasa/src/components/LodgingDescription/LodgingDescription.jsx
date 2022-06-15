@@ -1,36 +1,40 @@
 import {Collapse} from "../Collapse";
-import {useParams} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import {logements} from "../../assets/data/logements";
 import {Tag} from "../Tag";
 import {Star} from "../Star";
 import {Owner} from "../Owner";
 
 export function LodgingDescription(props){
+    let navigate = useNavigate();
     const {linkNumber} = useParams();   //On récupère le numéro de la location cliquée
     console.log(linkNumber);
-    logements[linkNumber].equipments.forEach(item => console.log(item));
+    const tab = [1, 2, 3, 4, 5];
+    const activeLogement = logements.find(logement => logement.id === linkNumber);
+    if(activeLogement === undefined){   //Si le logement n'est pas trouvé, alors on affiche la page d'erreur
+        navigate("/");  //test avec la page d'accueil
+    }
+    console.log(activeLogement);
+    activeLogement.equipments.forEach(item => console.log(item));
     return <div>
-        <h2>{logements[linkNumber].title}</h2>
-        <p>{logements[linkNumber].location}</p>
+        <h2>{activeLogement.title}</h2>
+        <p>{activeLogement.location}</p>
         <div className={"tags"}>
-            {logements[linkNumber].tags.map(tag => {
+            {activeLogement.tags.map(tag => {
                     return <Tag content={tag}/>;
                 })
             }
         </div>
 
         <div className={"evaluation"}>
-            <p>{logements[linkNumber].rating}</p>
-            <Star fill={"#FF6060"} width={"30"} height={"30"}></Star>
-            <Star fill={"#E3E3E3"} width={"30"} height={"30"}></Star>
-
-            }
+            <p>{activeLogement.rating}</p>
+            {tab.map((item, index) => (<Star fill={index + 1 > activeLogement.rating ? "#E3E3E3" : "red"} width={"30"} height={"30"}></Star>))}
         </div>
 
-        <Owner name={logements[linkNumber].host.name} picture={logements[linkNumber].host.picture}/>
+        <Owner name={activeLogement.host.name} picture={activeLogement.host.picture}/>
 
-        <Collapse title={"Description"} content={logements[linkNumber].description}></Collapse>
-        <Collapse title={"Équipements"} content={`<ul class="list-equipments">` + logements[linkNumber].equipments.map(equipment => {
+        <Collapse title={"Description"} content={activeLogement.description}></Collapse>
+        <Collapse title={"Équipements"} content={`<ul class="list-equipments">` + activeLogement.equipments.map(equipment => {
             console.log(equipment)
             return `<li>${equipment}</li>`;
         }) + `</ul>`}></Collapse>

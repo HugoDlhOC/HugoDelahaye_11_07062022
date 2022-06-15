@@ -7,12 +7,12 @@ export function Header(props){
         <img id={"logo-header"} src={logo}/>
         <nav>
             <ul id={'menu'}>
-                <Link to={"/"}>
+                <NavLink to={"/"} className={({isActive}) => isActive ? "active" : ""}>
                     <li id={'menu-home'}>Accueil</li>
-                </Link>
-                <Link to={"/about"}>
+                </NavLink>
+                <NavLink to={"/about"} className={({isActive}) => isActive ? "active" : ""}>
                     <li id={'menu-about'}>À propos</li>
-                </Link>
+                </NavLink>
             </ul>
         </nav>
     </header>

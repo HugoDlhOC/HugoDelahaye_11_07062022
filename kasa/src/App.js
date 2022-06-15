@@ -6,7 +6,7 @@ import {Home} from "./pages/Home";
 import {LodgingSheet} from "./pages/LodgingSheet";
 import {About} from "./pages/About";
 import ReactDOM from "react-dom/client";
-
+import {Error} from "./components/Error";
 import {
     BrowserRouter,
     Routes,
@@ -22,6 +22,7 @@ function App() {
               <Route exact path={"/"} element={<Home />}></Route>
               <Route path={"/about"} element={<About />}></Route>
               <Route path={"/lodgingsheet/:linkNumber"} element={<LodgingSheet />}></Route>
+              <Route path={"*"} element={<Error/>}></Route>
           </Routes>
           <Footer></Footer>
       </BrowserRouter>
