@@ -9,9 +9,7 @@ body {
 }
 
 header {
-  margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 40px 100px 69px 100px;
   display: flex;
 }
 header nav {
@@ -33,9 +31,10 @@ header nav #menu a li {
 }
 
 #banner {
-  margin-left: 100px;
-  margin-right: 100px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
 }
 #banner #text-banner {
   font-size: 48px;
@@ -43,15 +42,12 @@ header nav #menu a li {
   padding: 0;
   position: absolute;
   /*on retire l'élément du flow*/
-  top: 5rem;
-  left: 5em;
+  top: 35%;
   color: white;
 }
 #banner img {
   border-radius: 25px;
-}
-#banner img:after {
-  content: "";
+  filter: brightness(75%);
 }
 
 .card {
@@ -62,6 +58,8 @@ header nav #menu a li {
 .card a .cover-location {
   width: 340px;
   border-radius: 10px;
+  object-fit: cover;
+  height: 340px;
 }
 .card a .name-location {
   padding: 0;
@@ -70,6 +68,7 @@ header nav #menu a li {
   bottom: 1rem;
   font-size: 18px;
   color: white;
+  max-width: 340px;
 }
 
 footer {
@@ -90,14 +89,17 @@ footer #copyrights {
 }
 
 #lodgings-list {
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: #F7F7F7;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin-right: 100px;
-  margin-left: 100px;
-  padding: 43px;
   border-radius: 25px;
+  max-width: 1240px;
+  grid-gap: 60px;
+  padding: 60px;
+  margin-bottom: 43px;
 }
 
 .collapse-section {
@@ -118,8 +120,6 @@ footer #copyrights {
   align-items: center;
   border-radius: 5px;
   transition: background-color 0.8s ease;
-  margin-left: 208px;
-  margin-right: 208px;
 }
 .collapse-section .collapse:hover, .collapse-section active {
   background-color: #FF7878;
@@ -140,9 +140,6 @@ footer #copyrights {
   background-color: #F7F7F7;
   overflow: hidden;
   transition: max-height 0.6s ease;
-  margin-bottom: 31px;
-  margin-left: 208px;
-  margin-right: 208px;
   border-radius: 0px 0px 5px 5px;
 }
 .collapse-section .collapse-text {
@@ -162,6 +159,121 @@ footer #copyrights {
   background-color: #FF6060;
   color: white;
   border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  justify-content: center;
+}
+.gallery #gallery-picture {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.gallery #btn-previous-picture {
+  transform: rotate(90deg);
+  top: 50%;
+  left: 0;
+  border: none;
+  cursor: pointer;
+}
+.gallery #btn-next-picture {
+  transform: rotate(-90deg);
+  top: 50%;
+  right: 0;
+  border: none;
+}
+
+#lodging-description {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#lodging-description #container-primary-infos {
+  display: flex;
+  justify-content: space-between;
+}
+#lodging-description #container-primary-infos #container-logement-infos #active-name-location {
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#lodging-description #container-primary-infos #container-logement-infos #active-place-location {
+  font-size: 18px;
+  margin: 0;
+}
+#lodging-description #container-primary-infos #container-logement-infos #active-name-location, #lodging-description #container-primary-infos #container-logement-infos #active-place-location {
+  color: #FF6060;
+}
+#lodging-description #container-primary-infos #container-owner-stars #evaluation {
+  display: flex;
+  justify-content: flex-end;
+}
+#lodging-description #container-primary-infos #container-owner-stars #evaluation .star {
+  padding: 4px;
+}
+#lodging-description #container-primary-infos #container-owner {
+  display: flex;
+  justify-content: flex-end;
+}
+#lodging-description #collapses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#lodging-description #collapses .collapse-section {
+  width: 40%;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+}
+.owner #owner-name {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #FF7878;
+}
+.owner #owner-picture {
+  border-radius: 50%;
+  width: 64px;
+}
+
+#collapses-group {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#collapses-group .collapse-section {
+  margin-bottom: 31px;
+  max-width: 1023px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-container #title-error, .error-container #description-error, .error-container #link-home {
+  color: #FF7878;
+  margin: 0;
+}
+.error-container #title-error {
+  font-size: 288px;
+  margin: 0 0 66px 0;
+}
+.error-container #description-error {
+  font-size: 36px;
+  margin: 0 0 182px 0;
+}
+.error-container #link-home {
+  font-size: 18px;
+  margin: 0 0 159px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

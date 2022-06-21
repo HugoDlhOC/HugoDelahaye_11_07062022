@@ -1,0 +1,51 @@
+#lodging-description{
+  margin-left: 100px;
+  margin-right: 100px;
+  #container-primary-infos {
+    display: flex;
+    justify-content: space-between;
+
+    #container-logement-infos {
+      #active-name-location {
+        font-size: 36px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      #active-place-location {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      #active-name-location, #active-place-location {
+        color: #FF6060;
+      }
+    }
+
+    #container-owner-stars {
+      #evaluation {
+        display: flex;
+        justify-content: flex-end;
+
+        .star {
+          padding: 4px;
+        }
+      }
+    }
+
+    #container-owner {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  #collapses{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .collapse-section{
+      width: 40%;
+    }
+  }
+}

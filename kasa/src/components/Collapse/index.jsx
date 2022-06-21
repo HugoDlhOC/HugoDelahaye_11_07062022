@@ -27,7 +27,7 @@ export function Collapse(props){
         //console.log(content.current.scrollHeight);
         setRotateState(setActive === "active" ? "collapse-icon" : "collapse-icon rotation")
     }
-    return <div className={"collapse-section"}>
+    return <div className={"collapse-section"} id={props.id}>
         <button className={`collapse ${setActive}`} onClick={toggleCollapse}>
             <p className={"collapse-title"}>{props.title}</p>
             <Chevron className={`${setRotate}`} width={15} fill={"#FFF"}></Chevron>

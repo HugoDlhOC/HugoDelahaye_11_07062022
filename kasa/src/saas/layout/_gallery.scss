@@ -1,0 +1,29 @@
+.gallery{
+  display: flex;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  justify-content: center;
+
+  #gallery-picture{
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  #btn-previous-picture{
+    transform: rotate(90deg);
+    top: 50%;
+    left: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  #btn-next-picture{
+    transform: rotate(-90deg);
+    top: 50%;
+    right: 0;
+    border: none;
+  }
+}

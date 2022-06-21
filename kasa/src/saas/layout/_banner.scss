@@ -1,23 +1,20 @@
 #banner{
-  margin-left: 100px;
-  margin-right: 100px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
 
   #text-banner{
     font-size: 48px;
     margin: 0;
     padding: 0;
     position: absolute; /*on retire l'élément du flow*/
-    top: 5rem;
-    left: 5em;
+    top: 35%;
     color: white;
   }
 
   img{
     border-radius: 25px;
-  }
-
-  img:after{
-    content: "";
+    filter: brightness(75%);
   }
 }
