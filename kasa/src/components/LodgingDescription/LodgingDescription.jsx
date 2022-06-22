@@ -5,20 +5,31 @@ import {Gallery} from "../Gallery";
 import {Tag} from "../Tag";
 import {Star} from "../Star";
 import {Owner} from "../Owner";
+import {useEffect} from "react";
 
 export function LodgingDescription(props){
     let navigate = useNavigate();
     const {linkNumber} = useParams();   //On récupère le numéro de la location cliquée
-    console.log(linkNumber);
     const tab = [1, 2, 3, 4, 5];
     const activeLogement = logements.find(logement => logement.id === linkNumber);
-    if(activeLogement === undefined){   //Si le logement n'est pas trouvé, alors on affiche la page d'erreur
-        navigate("/");  //test avec la page d'accueil
+
+
+    useEffect(() => {
+        if(!activeLogement){   //Si le logement n'est pas trouvé, alors on affiche la page d'erreur
+            navigate("/");  //test avec la page d'accueil
+        }
+    }, [activeLogement]);
+
+    if(!activeLogement){
+        return null;
     }
+
     console.log(activeLogement);
     activeLogement.equipments.forEach(item => console.log(item));
     return <section id={"lodging-description"}>
-        <Gallery logement={activeLogement}></Gallery>
+        <div id={"container-gallery"}>
+            <Gallery logement={activeLogement}/>
+        </div>
         <div id={"container-primary-infos"}>
             <div id={"container-logement-infos"}>
                 <h2 id={"active-name-location"}>{activeLogement.title}</h2>
@@ -40,11 +51,12 @@ export function LodgingDescription(props){
             </div>
         </div>
         <div id={"collapses"}>
-            <Collapse title={"Description"} content={activeLogement.description} id={"collapse-description"}></Collapse>
-            <Collapse title={"Équipements"} content={`<ul class="list-equipments">` + activeLogement.equipments.map(equipment => {
-                console.log(equipment)
-                return `<li>${equipment}</li>`;
-            }) + `</ul>`} id={"collapse-equipments"}></Collapse>
+            <Collapse title={"Description"} id={"collapse-description"}><p className={"description-logement-collapse"}>{activeLogement.description}</p></Collapse>
+            <Collapse title={"Équipements"} id={"collapse-equipments"}>
+            <ul className={"list-equipments"}>
+                {activeLogement.equipments.map(equipment => <li>{equipment}</li>)}
+            </ul>
+            </Collapse>
         </div>
     </section>
 }

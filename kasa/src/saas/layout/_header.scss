@@ -1,26 +1,87 @@
 header{
   margin: 40px 100px 69px 100px;
   display: flex;
+  justify-content: space-between;
+
+  #logo-header{
+    width: 210px;
+  }
 
   nav{
-    margin-left: auto;
-
     #menu{
       list-style-type: none;
       display: flex;
 
-      a{
-        text-decoration: none;
+      #menu-home{
+        margin-right: 57px;
+      }
 
-        #menu-home{
-          margin-right: 57px;
-        }
-
-        li{
+      li{
+        a{
+          text-decoration: none;
           color: #FF6060;
           font-size: 24px;
         }
+
+        .active{
+          border-bottom: 2px #FF6060 solid;
+        }
       }
+    }
+  }
+}
+
+@media (max-width: $brk_tablet_large) {
+  header{
+    margin: 40px 100px 16px 100px;
+
+    #logo-header{
+      width: 145px;
+    }
+
+    nav{
+      #menu{
+        #menu-home{
+          margin-right: 25px;
+        }
+
+        li{
+          a{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $brk_tablet_medium) {
+  header{
+    margin: 20px 20px 16px 20px;
+  }
+}
+
+@media (max-width: $brk_mobile_large) {
+  header{
+    nav{
+      #menu{
+        #menu-home{
+          margin-right: 10px;
+        }
+        li{
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $brk_mobile_medium) {
+  header{
+    #logo-header{
+      width: 100px;
     }
   }
 }

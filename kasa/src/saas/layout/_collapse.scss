@@ -30,6 +30,8 @@
   .collapse-icon{
     margin-left: auto;
     transition: transform 0.8s ease;
+    margin-right: 16px;
+
   }
   /*Stylisation rotate icone*/
   .rotation{
@@ -44,7 +46,30 @@
   }
 
   .collapse-text{
-    padding: 24px;
     color: #FF6060;
+  }
+}
+
+@media (max-width: $brk_tablet_large) {
+  .collapse-section{
+    .collapse{
+      padding: 10px;
+    }
+
+    .collapse-title{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $brk_mobile_large) {
+  .collapse-section{
+    .collapse{
+      padding: 8px;
+    }
+
+    .collapse-title{
+      font-size: 13px;
+    }
   }
 }

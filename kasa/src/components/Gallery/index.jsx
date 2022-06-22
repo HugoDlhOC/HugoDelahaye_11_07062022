@@ -48,6 +48,7 @@ export function Gallery({logement}){
             <button id={"btn-next-picture"} onClick={after}>
                 <Chevron className={"chevron-gallery-picture"} height={"79.2px"} width={"46.68px"} fill={"white"}></Chevron>
             </button>
+            <span id={"counter-picture"}>{current + 1}/{logement.pictures.length}</span>
         </div>
     }
 }

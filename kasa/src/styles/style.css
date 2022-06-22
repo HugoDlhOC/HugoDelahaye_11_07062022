@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*COULEURS*/
+/*BREAKPOINTS*/
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/polices/Montserrat-VariableFont_wght.ttf");
@@ -6,35 +8,70 @@
 body {
   font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0;
+  width: 100%;
 }
 
 header {
   margin: 40px 100px 69px 100px;
   display: flex;
+  justify-content: space-between;
 }
-header nav {
-  margin-left: auto;
+header #logo-header {
+  width: 210px;
 }
 header nav #menu {
   list-style-type: none;
   display: flex;
 }
-header nav #menu a {
-  text-decoration: none;
-}
-header nav #menu a #menu-home {
+header nav #menu #menu-home {
   margin-right: 57px;
 }
-header nav #menu a li {
+header nav #menu li a {
+  text-decoration: none;
   color: #FF6060;
   font-size: 24px;
 }
+header nav #menu li .active {
+  border-bottom: 2px #FF6060 solid;
+}
 
+@media (max-width: 768px) {
+  header {
+    margin: 40px 100px 16px 100px;
+  }
+  header #logo-header {
+    width: 145px;
+  }
+  header nav #menu #menu-home {
+    margin-right: 25px;
+  }
+  header nav #menu li a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    margin: 20px 20px 16px 20px;
+  }
+}
+@media (max-width: 425px) {
+  header nav #menu #menu-home {
+    margin-right: 10px;
+  }
+  header nav #menu li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  header #logo-header {
+    width: 100px;
+  }
+}
 #banner {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 43px;
+  margin: 0px 100px 43px 100px;
 }
 #banner #text-banner {
   font-size: 48px;
@@ -48,12 +85,69 @@ header nav #menu a li {
 #banner img {
   border-radius: 25px;
   filter: brightness(75%);
+  width: 1240px;
+  object-fit: cover;
 }
 
+@media (max-width: 1250px) {
+  #banner #text-banner {
+    font-size: 40px;
+  }
+  #banner img {
+    width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  #banner #text-banner {
+    font-size: 36px;
+  }
+  #banner img {
+    width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  #banner {
+    margin: 0px 0px 43px 0px;
+  }
+  #banner #text-banner {
+    font-size: 28px;
+  }
+  #banner img {
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  #banner {
+    margin: 0px 0px 43px 0px;
+  }
+  #banner #text-banner {
+    font-size: 20px;
+  }
+  #banner img {
+    width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  #banner {
+    margin: 0px 0px 22px 0px;
+  }
+  #banner #text-banner {
+    font-size: 16px;
+  }
+  #banner img {
+    width: 335px;
+  }
+}
+@media (max-width: 375px) {
+  #banner img {
+    width: 300px;
+  }
+}
 .card {
   position: relative;
   display: flex;
   justify-content: center;
+  transition-duration: 0.5s;
 }
 .card a .cover-location {
   width: 340px;
@@ -63,14 +157,45 @@ header nav #menu a li {
 }
 .card a .name-location {
   padding: 0;
-  margin: 0;
+  margin: 0 20px 20px 20px;
   position: absolute;
-  bottom: 1rem;
+  bottom: 40px;
   font-size: 18px;
   color: white;
   max-width: 340px;
 }
 
+.card:hover {
+  transform: scale(105%);
+}
+
+@media (max-width: 1250px) {
+  .card a .cover-location {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 780px) {
+  .card a .cover-location {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .card a .cover-location {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .card a .cover-location {
+    width: 250px;
+    height: 250px;
+  }
+  .card a .name-location {
+    font-size: 16px;
+  }
+}
 footer {
   background-color: black;
   display: flex;
@@ -88,20 +213,55 @@ footer #copyrights {
   margin-bottom: 29px;
 }
 
+@media (max-width: 425px) {
+  footer #copyrights {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  footer #logo-footer {
+    width: 100px;
+  }
+}
 #lodgings-list {
-  margin-left: 100px;
-  margin-right: 100px;
-  background-color: #F7F7F7;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1240px;
-  grid-gap: 60px;
-  padding: 60px;
-  margin-bottom: 43px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: 0px auto 43px auto;
+}
+#lodgings-list .card {
+  padding: 30px;
+  background-color: #F6F6F6;
 }
 
+@media (max-width: 1250px) {
+  #lodgings-list {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: none;
+  }
+  #lodgings-list .card {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #lodgings-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 425px) {
+  #lodgings-list {
+    background-color: white;
+  }
+  #lodgings-list .card {
+    background-color: white;
+  }
+}
 .collapse-section {
   display: flex;
   flex-direction: column;
@@ -132,6 +292,7 @@ footer #copyrights {
 .collapse-section .collapse-icon {
   margin-left: auto;
   transition: transform 0.8s ease;
+  margin-right: 16px;
 }
 .collapse-section .rotation {
   transform: rotate(180deg);
@@ -143,10 +304,25 @@ footer #copyrights {
   border-radius: 0px 0px 5px 5px;
 }
 .collapse-section .collapse-text {
-  padding: 24px;
   color: #FF6060;
 }
 
+@media (max-width: 768px) {
+  .collapse-section .collapse {
+    padding: 10px;
+  }
+  .collapse-section .collapse-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .collapse-section .collapse {
+    padding: 8px;
+  }
+  .collapse-section .collapse-title {
+    font-size: 13px;
+  }
+}
 .tags {
   display: flex;
   margin-top: 20px;
@@ -161,36 +337,95 @@ footer #copyrights {
   border-radius: 10px;
 }
 
-.gallery {
+#container-gallery {
   display: flex;
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
   justify-content: center;
 }
-.gallery #gallery-picture {
+#container-gallery .gallery {
+  display: flex;
+  margin-top: 50px;
+  width: 1240px;
+  height: 415px;
+  justify-content: center;
+  position: relative;
+}
+#container-gallery .gallery #gallery-picture {
   width: 1240px;
   height: 415px;
   object-fit: cover;
   border-radius: 25px;
 }
-.gallery #btn-previous-picture {
-  transform: rotate(90deg);
-  top: 50%;
-  left: 0;
+#container-gallery .gallery #btn-previous-picture, #container-gallery .gallery #btn-next-picture {
+  position: absolute;
+  top: calc(50% - 46px);
+  /*Centre parfait - avec la dimension de l'icône*/
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
-.gallery #btn-next-picture {
+#container-gallery .gallery #btn-previous-picture {
+  transform: rotate(90deg);
+  left: 0;
+}
+#container-gallery .gallery #btn-next-picture {
   transform: rotate(-90deg);
-  top: 50%;
   right: 0;
-  border: none;
+}
+#container-gallery .gallery #counter-picture {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-size: 24px;
 }
 
+@media (max-width: 1250px) {
+  #container-gallery .gallery {
+    width: 700px;
+  }
+  #container-gallery .gallery #gallery-picture {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  #container-gallery .gallery {
+    width: 500px;
+    height: 315px;
+  }
+  #container-gallery .gallery #gallery-picture {
+    width: 500px;
+    height: 315px;
+  }
+}
+@media (max-width: 600px) {
+  #container-gallery .gallery {
+    width: 400px;
+    height: 300px;
+  }
+  #container-gallery .gallery #gallery-picture {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 425px) {
+  #container-gallery .gallery {
+    width: 350px;
+    height: 250px;
+  }
+  #container-gallery .gallery #gallery-picture {
+    width: 350px;
+    height: 250px;
+  }
+  #container-gallery .gallery #btn-previous-picture svg, #container-gallery .gallery #btn-next-picture svg {
+    width: 18px;
+  }
+  #container-gallery .gallery #counter-picture {
+    font-size: 16px;
+  }
+}
 #lodging-description {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
 }
 #lodging-description #container-primary-infos {
   display: flex;
@@ -215,22 +450,117 @@ footer #copyrights {
 #lodging-description #container-primary-infos #container-owner-stars #evaluation .star {
   padding: 4px;
 }
-#lodging-description #container-primary-infos #container-owner {
+#lodging-description #container-primary-infos #container-owner-stars #container-owner {
   display: flex;
   justify-content: flex-end;
 }
 #lodging-description #collapses {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 0px 50px 50px 50px;
 }
 #lodging-description #collapses .collapse-section {
   width: 40%;
 }
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 20px 40px 20px;
+}
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse li {
+  font-size: 18px;
+}
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
+  font-size: 18px;
+}
 
+@media (max-width: 1440px) {
+  #lodging-description #container-primary-infos {
+    justify-content: normal;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos #active-name-location {
+    font-size: 30px;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars {
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  #lodging-description #container-primary-infos {
+    flex-direction: column;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos .tags {
+    margin-bottom: 16px;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars #container-owner {
+    order: 1;
+    margin-left: auto;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars #container-owner .owner {
+    margin-top: 0;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars #evaluation {
+    justify-content: normal;
+  }
+  #lodging-description #collapses {
+    flex-direction: column;
+    align-items: center;
+  }
+  #lodging-description #collapses #collapse-description {
+    margin-bottom: 20px;
+  }
+  #lodging-description #collapses .collapse-section {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #lodging-description #container-primary-infos {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos #active-name-location {
+    font-size: 18px;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos #active-place-location {
+    font-size: 14px;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos .tags .tag {
+    padding: 3px 5px 3px 5px;
+  }
+  #lodging-description #container-primary-infos #container-logement-infos .tags .tag span {
+    font-size: 10px;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars #container-owner .owner #owner-name {
+    font-size: 12px;
+  }
+  #lodging-description #container-primary-infos #container-owner-stars #container-owner .owner img {
+    width: 32px;
+  }
+  #lodging-description #collapses .collapse-section .collapse-title {
+    font-size: 13px;
+  }
+  #lodging-description #collapses .collapse-section svg {
+    width: 15px;
+  }
+  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li {
+    font-size: 12px;
+  }
+  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments {
+    padding: 23px 11px 23px 11px;
+  }
+}
 .owner {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 .owner #owner-name {
   font-size: 18px;
@@ -253,7 +583,27 @@ footer #copyrights {
   margin-bottom: 31px;
   max-width: 1023px;
 }
+#collapses-group .collapse-section .collapse-content .collapse-text p {
+  font-size: 24px;
+  margin: 0;
+  padding: 36px 18px 36px 18px;
+}
 
+@media (max-width: 768px) {
+  #collapses-group {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  #collapses-group .collapse-section .collapse-content .collapse-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  #collapses-group .collapse-section .collapse-content .collapse-text p {
+    font-size: 12px;
+    padding: 23px 11px 23px 11px;
+  }
+}
 .error-container {
   display: flex;
   flex-direction: column;
@@ -270,10 +620,44 @@ footer #copyrights {
 .error-container #description-error {
   font-size: 36px;
   margin: 0 0 182px 0;
+  text-align: center;
 }
 .error-container #link-home {
   font-size: 18px;
   margin: 0 0 159px 0;
+}
+
+@media (max-width: 1024px) {
+  .error-container #title-error {
+    font-size: 200px;
+  }
+  .error-container #description-error {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .error-container #title-error {
+    font-size: 160px;
+  }
+  .error-container #description-error {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .error-container #title-error {
+    font-size: 96px;
+  }
+  .error-container #description-error {
+    font-size: 18px;
+  }
+  .error-container #link-home {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .star {
+    width: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

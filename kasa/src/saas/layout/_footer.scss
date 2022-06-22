@@ -15,5 +15,20 @@ footer{
     font-size: 24px;
     margin-bottom: 29px;
   }
+}
 
+@media (max-width: $brk_mobile_large) {
+  footer{
+    #copyrights{
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: $brk_mobile_medium) {
+  footer{
+    #logo-footer{
+      width: 100px;
+    }
+  }
 }
