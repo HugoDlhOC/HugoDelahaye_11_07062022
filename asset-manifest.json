@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/css/main.b6ff1327.css",
-    "main.js": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/js/main.cddba88f.js",
-    "static/js/787.0ce615c0.chunk.js": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/js/787.0ce615c0.chunk.js",
-    "static/media/about-background.png": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/about-background.ed819f2cc2faefb4fba2.png",
-    "static/media/home-background.png": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/home-background.efc1935eb81fc5e585f9.png",
-    "static/media/Montserrat-VariableFont_wght.ttf": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
-    "static/media/logo.svg": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/logo-header.svg": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/logo-header.759702e80d2cca5e6d54b41ca6682c02.svg",
-    "static/media/logo-footer.svg": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/media/logo-footer.ee689fd9409d1b5a898b4247819d8a00.svg",
-    "index.html": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/index.html",
-    "main.b6ff1327.css.map": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/css/main.b6ff1327.css.map",
-    "main.cddba88f.js.map": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/js/main.cddba88f.js.map",
-    "787.0ce615c0.chunk.js.map": "/https/HugoDlhOC.github.io/HugoDelahaye_11_07062022/static/js/787.0ce615c0.chunk.js.map"
+    "main.css": "/HugoDelahaye_11_07062022/static/css/main.e910f578.css",
+    "main.js": "/HugoDelahaye_11_07062022/static/js/main.b4dda9f9.js",
+    "static/js/787.0ce615c0.chunk.js": "/HugoDelahaye_11_07062022/static/js/787.0ce615c0.chunk.js",
+    "static/media/about-background.png": "/HugoDelahaye_11_07062022/static/media/about-background.ed819f2cc2faefb4fba2.png",
+    "static/media/home-background.png": "/HugoDelahaye_11_07062022/static/media/home-background.efc1935eb81fc5e585f9.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/HugoDelahaye_11_07062022/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
+    "static/media/logo.svg": "/HugoDelahaye_11_07062022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo-header.svg": "/HugoDelahaye_11_07062022/static/media/logo-header.759702e80d2cca5e6d54b41ca6682c02.svg",
+    "static/media/logo-footer.svg": "/HugoDelahaye_11_07062022/static/media/logo-footer.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/HugoDelahaye_11_07062022/index.html",
+    "main.e910f578.css.map": "/HugoDelahaye_11_07062022/static/css/main.e910f578.css.map",
+    "main.b4dda9f9.js.map": "/HugoDelahaye_11_07062022/static/js/main.b4dda9f9.js.map",
+    "787.0ce615c0.chunk.js.map": "/HugoDelahaye_11_07062022/static/js/787.0ce615c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ff1327.css",
-    "static/js/main.cddba88f.js"
+    "static/css/main.e910f578.css",
+    "static/js/main.b4dda9f9.js"
   ]
 }
