@@ -1,43 +1,43 @@
-#lodgings-list{
+#lodgings-list {
   display: flex;
   flex-wrap: wrap;
   max-width: 1240px;
   padding: 20px;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
   margin: 0px auto 43px auto;
 
-  .card{
+  .card {
     padding: 30px;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
 }
 
 @media (max-width: $brk_laptop_medium) {
-  #lodgings-list{
+  #lodgings-list {
     margin-left: 50px;
     margin-right: 50px;
     max-width: none;
 
-    .card{
+    .card {
       padding: 10px;
     }
   }
 }
 
 @media (max-width: $brk_tablet_medium) {
-  #lodgings-list{
+  #lodgings-list {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 @media (max-width: $brk_mobile_large) {
-  #lodgings-list{
+  #lodgings-list {
     background-color: white;
 
-    .card{
+    .card {
       background-color: white;
     }
   }

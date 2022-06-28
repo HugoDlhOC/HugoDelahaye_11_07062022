@@ -1,17 +1,17 @@
-#collapses-group{
+#collapses-group {
   margin-right: 100px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .collapse-section{
+  .collapse-section {
     margin-bottom: 31px;
     max-width: 1023px;
 
-    .collapse-content{
-      .collapse-text{
-        p{
+    .collapse-content {
+      .collapse-text {
+        p {
           font-size: 24px;
           margin: 0;
           padding: 36px 18px 36px 18px;
@@ -22,13 +22,13 @@
 }
 
 @media (max-width: $brk_tablet_large) {
-  #collapses-group{
+  #collapses-group {
     margin-right: 50px;
     margin-left: 50px;
-    .collapse-section{
-      .collapse-content{
-        .collapse-text{
-          p{
+    .collapse-section {
+      .collapse-content {
+        .collapse-text {
+          p {
             font-size: 15px;
           }
         }
@@ -38,11 +38,11 @@
 }
 
 @media (max-width: $brk_mobile_large) {
-  #collapses-group{
-    .collapse-section{
-      .collapse-content{
-        .collapse-text{
-          p{
+  #collapses-group {
+    .collapse-section {
+      .collapse-content {
+        .collapse-text {
+          p {
             font-size: 12px;
             padding: 23px 11px 23px 11px;
           }

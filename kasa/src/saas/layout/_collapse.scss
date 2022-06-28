@@ -1,9 +1,9 @@
-.collapse-section{
+.collapse-section {
   display: flex;
   flex-direction: column;
 
   /*Bouton pour ouvrir la collapse*/
-  .collapse{
+  .collapse {
     background-color: $primary_color;
     color: white;
     padding: 15px;
@@ -16,59 +16,59 @@
     transition: background-color 0.8s ease;
   }
 
-  .collapse:hover, active{
-    background-color: #FF7878;
+  .collapse:hover,
+  active {
+    background-color: #ff7878;
   }
 
-  .collapse-title{
+  .collapse-title {
     text-align: left;
     font-size: 24px;
     margin: 0;
   }
 
   /*Stylisation icone*/
-  .collapse-icon{
+  .collapse-icon {
     margin-left: auto;
     transition: transform 0.8s ease;
     margin-right: 16px;
-
   }
   /*Stylisation rotate icone*/
-  .rotation{
+  .rotation {
     transform: rotate(180deg);
   }
 
-  .collapse-content{
+  .collapse-content {
     background-color: $light-gray;
     overflow: hidden;
     transition: max-height 0.6s ease;
     border-radius: 0px 0px 5px 5px;
   }
 
-  .collapse-text{
+  .collapse-text {
     color: $primary_color;
   }
 }
 
 @media (max-width: $brk_tablet_large) {
-  .collapse-section{
-    .collapse{
+  .collapse-section {
+    .collapse {
       padding: 10px;
     }
 
-    .collapse-title{
+    .collapse-title {
       font-size: 16px;
     }
   }
 }
 
 @media (max-width: $brk_mobile_large) {
-  .collapse-section{
-    .collapse{
+  .collapse-section {
+    .collapse {
       padding: 8px;
     }
 
-    .collapse-title{
+    .collapse-title {
       font-size: 13px;
     }
   }

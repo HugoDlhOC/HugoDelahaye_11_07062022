@@ -1,10 +1,10 @@
-#banner{
+#banner {
   position: relative;
   display: flex;
   justify-content: center;
   margin: 0px 100px 43px 100px;
 
-  #text-banner{
+  #text-banner {
     font-size: 48px;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     color: white;
   }
 
-  img{
+  img {
     border-radius: 25px;
     filter: brightness(75%);
     width: 1240px;
@@ -22,63 +22,63 @@
 }
 
 @media (max-width: $brk_laptop_medium) {
-  #banner{
-    #text-banner{
+  #banner {
+    #text-banner {
       font-size: 40px;
     }
 
-    img{
+    img {
       width: 1000px;
     }
   }
 }
 
 @media (max-width: $brk_laptop_small) {
-  #banner{
-    #text-banner{
+  #banner {
+    #text-banner {
       font-size: 36px;
     }
 
-    img{
+    img {
       width: 750px;
     }
   }
 }
 
 @media (max-width: $brk_tablet_large) {
-  #banner{
+  #banner {
     margin: 0px 0px 43px 0px;
-    #text-banner{
+    #text-banner {
       font-size: 28px;
     }
 
-    img{
+    img {
       width: 600px;
     }
   }
 }
 
 @media (max-width: $brk_tablet_medium) {
-  #banner{
+  #banner {
     margin: 0px 0px 43px 0px;
-    #text-banner{
+    #text-banner {
       font-size: 20px;
     }
 
-    img{
+    img {
       width: 400px;
     }
   }
 }
 
 @media (max-width: $brk_mobile_large) {
-  #banner{
+  #banner {
     margin: 0px 0px 22px 0px;
-    #text-banner{
+    #text-banner {
       font-size: 16px;
     }
 
-    img{
+    img {
       width: 335px;
     }
   }

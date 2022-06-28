@@ -1,16 +1,16 @@
-footer{
+footer {
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  #logo-footer{
+  #logo-footer {
     color: #61dafb;
     width: 122px;
     margin-top: 66px;
   }
 
-  #copyrights{
+  #copyrights {
     color: white;
     font-size: 24px;
     margin-bottom: 29px;
@@ -18,16 +18,16 @@ footer{
 }
 
 @media (max-width: $brk_mobile_large) {
-  footer{
-    #copyrights{
+  footer {
+    #copyrights {
       font-size: 12px;
     }
   }
 }
 
 @media (max-width: $brk_mobile_medium) {
-  footer{
-    #logo-footer{
+  footer {
+    #logo-footer {
       width: 100px;
     }
   }

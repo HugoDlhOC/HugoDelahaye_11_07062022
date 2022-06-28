@@ -28,11 +28,11 @@ header nav #menu #menu-home {
 }
 header nav #menu li a {
   text-decoration: none;
-  color: #FF6060;
+  color: #ff6060;
   font-size: 24px;
 }
 header nav #menu li .active {
-  border-bottom: 2px #FF6060 solid;
+  border-bottom: 2px #ff6060 solid;
 }
 
 @media (max-width: 768px) {
@@ -229,13 +229,13 @@ footer #copyrights {
   max-width: 1240px;
   padding: 20px;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
   margin: 0px auto 43px auto;
 }
 #lodgings-list .card {
   padding: 30px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 @media (max-width: 1250px) {
@@ -270,7 +270,7 @@ footer #copyrights {
   /*Stylisation rotate icone*/
 }
 .collapse-section .collapse {
-  background-color: #FF6060;
+  background-color: #ff6060;
   color: white;
   padding: 15px;
   cursor: pointer;
@@ -281,8 +281,9 @@ footer #copyrights {
   border-radius: 5px;
   transition: background-color 0.8s ease;
 }
-.collapse-section .collapse:hover, .collapse-section active {
-  background-color: #FF7878;
+.collapse-section .collapse:hover,
+.collapse-section active {
+  background-color: #ff7878;
 }
 .collapse-section .collapse-title {
   text-align: left;
@@ -298,13 +299,13 @@ footer #copyrights {
   transform: rotate(180deg);
 }
 .collapse-section .collapse-content {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   overflow: hidden;
   transition: max-height 0.6s ease;
   border-radius: 0px 0px 5px 5px;
 }
 .collapse-section .collapse-text {
-  color: #FF6060;
+  color: #ff6060;
 }
 
 @media (max-width: 768px) {
@@ -332,7 +333,7 @@ footer #copyrights {
   padding: 3px 20px;
   font-size: 14px;
   margin-left: 10px;
-  background-color: #FF6060;
+  background-color: #ff6060;
   color: white;
   border-radius: 10px;
 }
@@ -355,7 +356,8 @@ footer #copyrights {
   object-fit: cover;
   border-radius: 25px;
 }
-#container-gallery .gallery #btn-previous-picture, #container-gallery .gallery #btn-next-picture {
+#container-gallery .gallery #btn-previous-picture,
+#container-gallery .gallery #btn-next-picture {
   position: absolute;
   top: calc(50% - 46px);
   /*Centre parfait - avec la dimension de l'icône*/
@@ -415,7 +417,8 @@ footer #copyrights {
     width: 350px;
     height: 250px;
   }
-  #container-gallery .gallery #btn-previous-picture svg, #container-gallery .gallery #btn-next-picture svg {
+  #container-gallery .gallery #btn-previous-picture svg,
+#container-gallery .gallery #btn-next-picture svg {
     width: 18px;
   }
   #container-gallery .gallery #counter-picture {
@@ -440,8 +443,9 @@ footer #copyrights {
   font-size: 18px;
   margin: 0;
 }
-#lodging-description #container-primary-infos #container-logement-infos #active-name-location, #lodging-description #container-primary-infos #container-logement-infos #active-place-location {
-  color: #FF6060;
+#lodging-description #container-primary-infos #container-logement-infos #active-name-location,
+#lodging-description #container-primary-infos #container-logement-infos #active-place-location {
+  color: #ff6060;
 }
 #lodging-description #container-primary-infos #container-owner-stars #evaluation {
   display: flex;
@@ -462,12 +466,14 @@ footer #copyrights {
 #lodging-description #collapses .collapse-section {
   width: 40%;
 }
-#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments,
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
   list-style-type: none;
   margin: 0;
   padding: 40px 20px 40px 20px;
 }
-#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse li {
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li,
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse li {
   font-size: 18px;
 }
 #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse {
@@ -550,10 +556,12 @@ footer #copyrights {
   #lodging-description #collapses .collapse-section svg {
     width: 15px;
   }
-  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li {
+  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse,
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments li {
     font-size: 12px;
   }
-  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse, #lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments {
+  #lodging-description #collapses .collapse-section .collapse-content .collapse-text .description-logement-collapse,
+#lodging-description #collapses .collapse-section .collapse-content .collapse-text .list-equipments {
     padding: 23px 11px 23px 11px;
   }
 }
@@ -565,7 +573,7 @@ footer #copyrights {
 .owner #owner-name {
   font-size: 18px;
   margin-right: 10px;
-  color: #FF6060;
+  color: #ff6060;
 }
 .owner #owner-picture {
   border-radius: 50%;
@@ -609,8 +617,10 @@ footer #copyrights {
   flex-direction: column;
   align-items: center;
 }
-.error-container #title-error, .error-container #description-error, .error-container #link-home {
-  color: #FF6060;
+.error-container #title-error,
+.error-container #description-error,
+.error-container #link-home {
+  color: #ff6060;
   margin: 0;
 }
 .error-container #title-error {

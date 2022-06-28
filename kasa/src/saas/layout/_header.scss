@@ -1,29 +1,29 @@
-header{
+header {
   margin: 40px 100px 69px 100px;
   display: flex;
   justify-content: space-between;
 
-  #logo-header{
+  #logo-header {
     width: 210px;
   }
 
-  nav{
-    #menu{
+  nav {
+    #menu {
       list-style-type: none;
       display: flex;
 
-      #menu-home{
+      #menu-home {
         margin-right: 57px;
       }
 
-      li{
-        a{
+      li {
+        a {
           text-decoration: none;
           color: $primary_color;
           font-size: 24px;
         }
 
-        .active{
+        .active {
           border-bottom: 2px $primary_color solid;
         }
       }
@@ -32,21 +32,21 @@ header{
 }
 
 @media (max-width: $brk_tablet_large) {
-  header{
+  header {
     margin: 40px 100px 16px 100px;
 
-    #logo-header{
+    #logo-header {
       width: 145px;
     }
 
-    nav{
-      #menu{
-        #menu-home{
+    nav {
+      #menu {
+        #menu-home {
           margin-right: 25px;
         }
 
-        li{
-          a{
+        li {
+          a {
             font-size: 20px;
           }
         }
@@ -56,20 +56,20 @@ header{
 }
 
 @media (max-width: $brk_tablet_medium) {
-  header{
+  header {
     margin: 20px 20px 16px 20px;
   }
 }
 
 @media (max-width: $brk_mobile_large) {
-  header{
-    nav{
-      #menu{
-        #menu-home{
+  header {
+    nav {
+      #menu {
+        #menu-home {
           margin-right: 10px;
         }
-        li{
-          a{
+        li {
+          a {
             font-size: 12px;
           }
         }
@@ -79,8 +79,8 @@ header{
 }
 
 @media (max-width: $brk_mobile_medium) {
-  header{
-    #logo-header{
+  header {
+    #logo-header {
       width: 100px;
     }
   }

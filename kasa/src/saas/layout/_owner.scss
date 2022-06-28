@@ -1,15 +1,15 @@
-.owner{
+.owner {
   display: flex;
   align-items: center;
   margin-top: 24px;
 
-  #owner-name{
+  #owner-name {
     font-size: 18px;
     margin-right: 10px;
     color: $primary_color;
   }
 
-  #owner-picture{
+  #owner-picture {
     border-radius: 50%;
     width: 64px;
   }

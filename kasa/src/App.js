@@ -1,31 +1,26 @@
-import logo from './logo.svg';
-import './styles/style.css';
-import {Header} from "./components/Header";
-import {Footer} from "./components/Footer";
-import {Home} from "./pages/Home";
-import {LodgingSheet} from "./pages/LodgingSheet";
-import {About} from "./pages/About";
-import ReactDOM from "react-dom/client";
-import {Error} from "./components/Error";
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
-
+import "./styles/style.css";
+import { HashRouter } from "react-router-dom";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { LodgingSheet } from "./pages/LodgingSheet";
+import { About } from "./pages/About";
+import { Error } from "./components/Error";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { home, about, lodgingSheet, errorPage } from "./routes";
 
 function App() {
   return (
-      <BrowserRouter>
-          <Header></Header>
-          <Routes>
-              <Route exact path={"/"} element={<Home />}></Route>
-              <Route path={"/about"} element={<About />}></Route>
-              <Route path={"/lodgingsheet/:linkNumber"} element={<LodgingSheet />}></Route>
-              <Route path={"*"} element={<Error/>}></Route>
-          </Routes>
-          <Footer></Footer>
-      </BrowserRouter>
+    <HashRouter>
+      <Header></Header>
+      <Routes>
+        <Route exact path={home} element={<Home />}></Route>
+        <Route path={about} element={<About />}></Route>
+        <Route path={lodgingSheet} element={<LodgingSheet />}></Route>
+        <Route path={errorPage} element={<Error />}></Route>
+      </Routes>
+      <Footer></Footer>
+    </HashRouter>
   );
 }
 

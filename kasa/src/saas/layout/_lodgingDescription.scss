@@ -1,4 +1,4 @@
-#lodging-description{
+#lodging-description {
   margin-left: auto;
   margin-right: auto;
   max-width: 1240px;
@@ -19,7 +19,8 @@
         margin: 0;
       }
 
-      #active-name-location, #active-place-location {
+      #active-name-location,
+      #active-place-location {
         color: $primary_color;
       }
     }
@@ -38,30 +39,30 @@
         justify-content: flex-end;
       }
     }
-
   }
 
-  #collapses{
+  #collapses {
     display: flex;
     justify-content: space-between;
     margin: 0px 50px 50px 50px;
 
-    .collapse-section{
+    .collapse-section {
       width: 40%;
 
-      .collapse-content{
-        .collapse-text{
-          .list-equipments, .description-logement-collapse{
+      .collapse-content {
+        .collapse-text {
+          .list-equipments,
+          .description-logement-collapse {
             list-style-type: none;
             margin: 0;
             padding: 40px 20px 40px 20px;
 
-            li{
+            li {
               font-size: 18px;
             }
           }
 
-          .description-logement-collapse{
+          .description-logement-collapse {
             font-size: 18px;
           }
         }
@@ -71,90 +72,87 @@
 }
 
 @media (max-width: $brk_laptop_large) {
-  #lodging-description{
-    #container-primary-infos{
+  #lodging-description {
+    #container-primary-infos {
       justify-content: normal;
       margin-left: 50px;
       margin-right: 50px;
-      #container-logement-infos{
-        #active-name-location{
+      #container-logement-infos {
+        #active-name-location {
           font-size: 30px;
         }
       }
 
-      #container-owner-stars{
+      #container-owner-stars {
         margin-left: auto;
       }
     }
 
-    #collapses{
-
+    #collapses {
     }
   }
 }
 
 @media (max-width: $brk_laptop_small) {
-  #lodging-description{
-    #container-primary-infos{
-      #container-logement-infos{
-        #active-name-location{
+  #lodging-description {
+    #container-primary-infos {
+      #container-logement-infos {
+        #active-name-location {
         }
       }
 
-      #container-owner-stars{
-
+      #container-owner-stars {
       }
     }
 
-    #collapses{
-
+    #collapses {
     }
   }
 }
 
 @media (max-width: $brk_tablet_large) {
-  #lodging-description{
-    #container-primary-infos{
+  #lodging-description {
+    #container-primary-infos {
       flex-direction: column;
-      #container-logement-infos{
-        #active-name-location{
+      #container-logement-infos {
+        #active-name-location {
         }
 
-        .tags{
+        .tags {
           margin-bottom: 16px;
         }
       }
 
-      #container-owner-stars{
+      #container-owner-stars {
         margin-left: 0;
         display: flex;
         align-items: center;
         margin-bottom: 16px;
 
-        #container-owner{
+        #container-owner {
           order: 1;
           margin-left: auto;
 
-          .owner{
+          .owner {
             margin-top: 0;
           }
         }
 
-        #evaluation{
+        #evaluation {
           justify-content: normal;
         }
       }
     }
 
-    #collapses{
+    #collapses {
       flex-direction: column;
       align-items: center;
 
-      #collapse-description{
+      #collapse-description {
         margin-bottom: 20px;
       }
 
-      .collapse-section{
+      .collapse-section {
         width: 100%;
       }
     }
@@ -162,64 +160,66 @@
 }
 
 @media (max-width: $brk_tablet_medium) {
-  #lodging-description{
-    #container-primary-infos{
+  #lodging-description {
+    #container-primary-infos {
       margin-left: 20px;
       margin-right: 20px;
 
-      #container-logement-infos{
-        #active-name-location{
+      #container-logement-infos {
+        #active-name-location {
           font-size: 18px;
         }
 
-        #active-place-location{
+        #active-place-location {
           font-size: 14px;
         }
 
-        .tags{
-          .tag{
+        .tags {
+          .tag {
             padding: 3px 5px 3px 5px;
 
-            span{
+            span {
               font-size: 10px;
             }
           }
         }
       }
 
-      #container-owner-stars{
-        #container-owner{
-          .owner{
-            #owner-name{
+      #container-owner-stars {
+        #container-owner {
+          .owner {
+            #owner-name {
               font-size: 12px;
             }
 
-            img{
+            img {
               width: 32px;
             }
           }
         }
 
-        #evaluation{
+        #evaluation {
         }
       }
     }
 
-    #collapses{
-      .collapse-section{
-        .collapse-title{
+    #collapses {
+      .collapse-section {
+        .collapse-title {
           font-size: 13px;
         }
-        svg{
+        svg {
           width: 15px;
         }
-        .collapse-content{
-          .collapse-text{
-            .description-logement-collapse, .list-equipments li{
+        .collapse-content {
+          .collapse-text {
+            .description-logement-collapse,
+            .list-equipments li {
               font-size: 12px;
             }
 
-            .description-logement-collapse, .list-equipments{
+            .description-logement-collapse,
+            .list-equipments {
               padding: 23px 11px 23px 11px;
             }
           }

@@ -1,64 +1,66 @@
-.error-container{
+.error-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  #title-error, #description-error, #link-home{
+  #title-error,
+  #description-error,
+  #link-home {
     color: $primary_color;
     margin: 0;
   }
-  #title-error{
+  #title-error {
     font-size: 288px;
     margin: 0 0 66px 0;
   }
 
-  #description-error{
+  #description-error {
     font-size: 36px;
     margin: 0 0 182px 0;
     text-align: center;
   }
 
-  #link-home{
+  #link-home {
     font-size: 18px;
     margin: 0 0 159px 0;
   }
 }
 
 @media (max-width: $brk_laptop_small) {
-  .error-container{
-    #title-error{
+  .error-container {
+    #title-error {
       font-size: 200px;
     }
 
-    #description-error{
+    #description-error {
       font-size: 30px;
     }
   }
 }
 
 @media (max-width: $brk_tablet_large) {
-  .error-container{
-    #title-error{
+  .error-container {
+    #title-error {
       font-size: 160px;
     }
 
-    #description-error{
+    #description-error {
       font-size: 20px;
     }
   }
 }
 
 @media (max-width: $brk_mobile_large) {
-  .error-container{
-    #title-error{
+  .error-container {
+    #title-error {
       font-size: 96px;
     }
 
-    #description-error{
+    #description-error {
       font-size: 18px;
     }
 
-    #link-home{
+    #link-home {
       font-size: 14px;
     }
   }

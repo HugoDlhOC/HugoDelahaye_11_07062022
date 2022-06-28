@@ -1,8 +1,8 @@
-#container-gallery{
+#container-gallery {
   display: flex;
   justify-content: center;
 
-  .gallery{
+  .gallery {
     display: flex;
     margin-top: 50px;
     width: 1240px;
@@ -10,31 +10,32 @@
     justify-content: center;
     position: relative;
 
-    #gallery-picture{
+    #gallery-picture {
       width: 1240px;
       height: 415px;
       object-fit: cover;
       border-radius: 25px;
     }
 
-    #btn-previous-picture, #btn-next-picture{
+    #btn-previous-picture,
+    #btn-next-picture {
       position: absolute;
       top: calc(50% - 46px); /*Centre parfait - avec la dimension de l'icône*/
       border: none;
       cursor: pointer;
       background-color: transparent;
     }
-    #btn-previous-picture{
+    #btn-previous-picture {
       transform: rotate(90deg);
       left: 0;
     }
 
-    #btn-next-picture{
+    #btn-next-picture {
       transform: rotate(-90deg);
       right: 0;
     }
 
-    #counter-picture{
+    #counter-picture {
       position: absolute;
       bottom: 25px;
       color: white;
@@ -44,10 +45,10 @@
 }
 
 @media (max-width: $brk_laptop_medium) {
-  #container-gallery{
-    .gallery{
+  #container-gallery {
+    .gallery {
       width: 700px;
-      #gallery-picture{
+      #gallery-picture {
         width: 700px;
       }
     }
@@ -55,11 +56,11 @@
 }
 
 @media (max-width: $brk_tablet_large) {
-  #container-gallery{
-    .gallery{
+  #container-gallery {
+    .gallery {
       width: 500px;
       height: 315px;
-      #gallery-picture{
+      #gallery-picture {
         width: 500px;
         height: 315px;
       }
@@ -68,11 +69,11 @@
 }
 
 @media (max-width: $brk_tablet_medium) {
-  #container-gallery{
-    .gallery{
+  #container-gallery {
+    .gallery {
       width: 400px;
       height: 300px;
-      #gallery-picture{
+      #gallery-picture {
         width: 400px;
         height: 300px;
       }
@@ -81,21 +82,22 @@
 }
 
 @media (max-width: $brk_mobile_large) {
-  #container-gallery{
-    .gallery{
+  #container-gallery {
+    .gallery {
       width: 350px;
       height: 250px;
 
-      #gallery-picture{
+      #gallery-picture {
         width: 350px;
         height: 250px;
       }
 
-      #btn-previous-picture svg, #btn-next-picture svg{
+      #btn-previous-picture svg,
+      #btn-next-picture svg {
         width: 18px;
       }
 
-      #counter-picture{
+      #counter-picture {
         font-size: 16px;
       }
     }
