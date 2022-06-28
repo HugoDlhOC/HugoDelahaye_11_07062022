@@ -4,7 +4,7 @@ import "../../styles/style.css";
 
 export function Header(props){
     return <header>
-        <img id={"logo-header"} src={logo}/>
+        <a href={"/"}><img id={"logo-header"} src={logo} alt={"logo en tête du site"}/></a>
         <nav>
             <ul id={'menu'}>
                 <li id={'menu-home'}><NavLink to={"/"} className={({isActive}) => isActive ? "active" : ""}>Accueil</NavLink></li>

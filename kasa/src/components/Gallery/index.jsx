@@ -2,9 +2,9 @@ import {useState} from "react";
 import {Chevron} from "../Chevron";
 import "../../styles/style.css";
 
-export function Gallery({logement}){
+export const Gallery = ({logement}) => {
 
-    function previous(){
+    const previous = () => {
         const galleryPicture = document.querySelector("#gallery-picture")
         console.log(logement.pictures.length)
 
@@ -18,7 +18,7 @@ export function Gallery({logement}){
         }
     }
 
-    function after(){
+    const after = () => {
         const galleryPicture = document.querySelector("#gallery-picture")
         console.log(logement.pictures.length)
 
@@ -33,22 +33,14 @@ export function Gallery({logement}){
     }
 
     const [current, setCurrent] = useState(0);
-    if(logement.pictures.length === 1){
-        //On n'affiche pas les 2 boutons
-        return <div className={"gallery"}>
-            <img id={"gallery-picture"} src={logement.pictures[current]}/>
-        </div>
-    }
-    else {
-        return <div className={"gallery"}>
-            <button id={"btn-previous-picture"} onClick={previous}>
-                <Chevron className={"chevron-gallery-picture"} height={"79.2px"} width={"46.68px"} fill={"white"}></Chevron>
-            </button>
-            <img id={"gallery-picture"} src={logement.pictures[current]}/>
-            <button id={"btn-next-picture"} onClick={after}>
-                <Chevron className={"chevron-gallery-picture"} height={"79.2px"} width={"46.68px"} fill={"white"}></Chevron>
-            </button>
-            <span id={"counter-picture"}>{current + 1}/{logement.pictures.length}</span>
-        </div>
-    }
+    return <div className={"gallery"}>
+        {logement.pictures.length > 1 && (<button id={"btn-previous-picture"} onClick={previous}>
+            <Chevron className={"chevron-gallery-picture"} height={"79.2px"} width={"46.68px"} fill={"white"}></Chevron>
+        </button>)}
+        <img id={"gallery-picture"} src={logement.pictures[current]} alt={"photo gallerie " + (current + 1) + "/" + logement.pictures.length + " de la location " +  logement.title}/>
+        {logement.pictures.length > 1 && (<button id={"btn-next-picture"} onClick={after}>
+            <Chevron className={"chevron-gallery-picture"} height={"79.2px"} width={"46.68px"} fill={"white"}></Chevron>
+        </button>)}
+        {logement.pictures.length > 1 && (<span id={"counter-picture"}>{current + 1}/{logement.pictures.length}</span>)}
+    </div>
 }

@@ -4,7 +4,7 @@
 
   /*Bouton pour ouvrir la collapse*/
   .collapse{
-    background-color: #FF6060;
+    background-color: $primary_color;
     color: white;
     padding: 15px;
     cursor: pointer;
@@ -39,14 +39,14 @@
   }
 
   .collapse-content{
-    background-color: #F7F7F7;
+    background-color: $light-gray;
     overflow: hidden;
     transition: max-height 0.6s ease;
     border-radius: 0px 0px 5px 5px;
   }
 
   .collapse-text{
-    color: #FF6060;
+    color: $primary_color;
   }
 }
 

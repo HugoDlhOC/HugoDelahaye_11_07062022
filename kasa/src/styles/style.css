@@ -565,7 +565,7 @@ footer #copyrights {
 .owner #owner-name {
   font-size: 18px;
   margin-right: 10px;
-  color: #FF7878;
+  color: #FF6060;
 }
 .owner #owner-picture {
   border-radius: 50%;
@@ -610,7 +610,7 @@ footer #copyrights {
   align-items: center;
 }
 .error-container #title-error, .error-container #description-error, .error-container #link-home {
-  color: #FF7878;
+  color: #FF6060;
   margin: 0;
 }
 .error-container #title-error {
