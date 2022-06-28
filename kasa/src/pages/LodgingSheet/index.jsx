@@ -10,7 +10,7 @@ export function LodgingSheet(props) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`/logements.json`, {
+    fetch(`/HugoDelahaye_11_07062022/logements.json`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
