@@ -7,9 +7,9 @@ import { about } from "../../routes";
 export function Header(props) {
   return (
     <header>
-      <a href={home}>
+      <Link to={home}>
         <img id={"logo-header"} src={logo} alt={"logo en tête du site"} />
-      </a>
+      </Link>
       <nav>
         <ul id={"menu"}>
           <li id={"menu-home"}>
