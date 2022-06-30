@@ -2,7 +2,7 @@ import { Collapse } from "../../components/Collapse";
 import { Banner } from "../../components/Banner";
 import imageBackgroundAbout from "../../assets/images/banners/about-background.png";
 
-export function About() {
+export const About = () => {
   return (
     <div>
       <Banner src={imageBackgroundAbout} text={""} />

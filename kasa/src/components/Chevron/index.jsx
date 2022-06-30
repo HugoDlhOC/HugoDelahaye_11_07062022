@@ -1,4 +1,4 @@
-export function Chevron({ className, height, width, fill }) {
+export const Chevron = ({ className, height, width, fill }) => {
   return (
     <svg
       className={className}

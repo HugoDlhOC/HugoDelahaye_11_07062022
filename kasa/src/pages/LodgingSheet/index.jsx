@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { errorPage } from "../../routes";
 
-export function LodgingSheet(props) {
+export const LodgingSheet = () => {
   const { linkNumber } = useParams(); //On récupère le numéro de la location cliquée
   const navigate = useNavigate();
   const [activeLogement, setActiveLogement] = useState(null);

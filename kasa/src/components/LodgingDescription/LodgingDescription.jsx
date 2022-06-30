@@ -4,7 +4,7 @@ import { Tag } from "../Tag";
 import { Star } from "../Star";
 import { Owner } from "../Owner";
 
-export function LodgingDescription({ activeLogement }) {
+export const LodgingDescription = ({ activeLogement }) => {
   const tab = [1, 2, 3, 4, 5];
 
   return (

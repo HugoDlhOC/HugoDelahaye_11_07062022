@@ -1,4 +1,4 @@
-export function Owner({ name, picture }) {
+export const Owner = ({ name, picture }) => {
   return (
     <div className={"owner"}>
       <p id={"owner-name"}>{name}</p>

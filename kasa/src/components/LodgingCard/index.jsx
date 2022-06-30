@@ -1,7 +1,7 @@
 import "../../styles/style.css";
 import { Link, useParams } from "react-router-dom";
 
-export function LodgingCard({ nameLocation, imgLocation, linkNumber }) {
+export const LodgingCard = ({ nameLocation, imgLocation, linkNumber }) => {
   return (
     <div className={"card"}>
       <Link to={`/lodgingsheet/${linkNumber}`}>

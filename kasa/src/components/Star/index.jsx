@@ -1,4 +1,4 @@
-export function Star({ fill, height, width, className }) {
+export const Star = ({ fill, height, width, className }) => {
   return (
     <svg
       width={width}

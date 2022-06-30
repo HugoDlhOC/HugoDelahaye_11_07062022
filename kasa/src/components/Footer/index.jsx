@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo-footer.svg";
 import { home } from "../../routes";
 
-export function Footer(props) {
+export const Footer = () => {
   return (
     <footer>
       <Link to={home}>

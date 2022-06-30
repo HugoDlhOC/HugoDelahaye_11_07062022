@@ -5,7 +5,6 @@ import "../../styles/style.css";
 export const Gallery = ({ logement }) => {
   const previous = () => {
     const galleryPicture = document.querySelector("#gallery-picture");
-    console.log(logement.pictures.length);
 
     //Si l'on est à la première image
     if (current === 0) {
@@ -19,7 +18,6 @@ export const Gallery = ({ logement }) => {
 
   const after = () => {
     const galleryPicture = document.querySelector("#gallery-picture");
-    console.log(logement.pictures.length);
 
     //Si l'on est à la dernière image
     if (current === logement.pictures.length - 1) {

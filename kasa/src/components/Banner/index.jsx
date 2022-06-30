@@ -1,8 +1,7 @@
 import "../../styles/style.css";
-import { logements } from "../../assets/data/logements";
 
-export function Banner({ src, text }) {
-  //à la place de props & props.src
+export const Banner = ({ src, text }) => {
+
   return (
     <section id={"banner"}>
       <img src={src} alt={"image bannière"} />

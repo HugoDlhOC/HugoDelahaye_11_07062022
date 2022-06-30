@@ -4,7 +4,7 @@ import "../../styles/style.css";
 import { home } from "../../routes";
 import { about } from "../../routes";
 
-export function Header(props) {
+export const Header = () => {
   return (
     <header>
       <Link to={home}>

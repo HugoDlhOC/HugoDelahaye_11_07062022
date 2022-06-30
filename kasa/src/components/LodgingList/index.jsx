@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { LodgingCard } from "../LodgingCard";
 import "../../styles/style.css";
 
-export function LodgingList(props) {
+export const LodgingList = () => {
   const [logements, setLogements] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 

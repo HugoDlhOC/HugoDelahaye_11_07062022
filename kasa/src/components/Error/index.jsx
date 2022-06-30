@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { home } from "../../routes";
 
-export function Error(props) {
+export const Error = () => {
   return (
     <div className={"error-container"}>
       <h1 id={"title-error"}>404</h1>
