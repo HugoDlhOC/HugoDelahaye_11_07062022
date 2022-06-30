@@ -13,4 +13,4 @@ export const Error = () => {
       </Link>
     </div>
   );
-}
+};

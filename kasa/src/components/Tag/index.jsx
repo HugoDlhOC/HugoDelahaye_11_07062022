@@ -4,4 +4,4 @@ export const Tag = ({ content }) => {
       <span>{content}</span>
     </div>
   );
-}
+};

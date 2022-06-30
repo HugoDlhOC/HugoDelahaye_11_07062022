@@ -36,4 +36,4 @@ export const LodgingSheet = () => {
       {activeLogement && <LodgingDescription activeLogement={activeLogement} />}
     </div>
   );
-}
+};

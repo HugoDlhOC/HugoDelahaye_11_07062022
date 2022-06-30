@@ -14,4 +14,4 @@ export const LodgingCard = ({ nameLocation, imgLocation, linkNumber }) => {
       </Link>
     </div>
   );
-}
+};

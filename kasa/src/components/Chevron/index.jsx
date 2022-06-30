@@ -14,4 +14,4 @@ export const Chevron = ({ className, height, width, fill }) => {
       />
     </svg>
   );
-}
+};

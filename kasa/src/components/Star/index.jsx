@@ -14,4 +14,4 @@ export const Star = ({ fill, height, width, className }) => {
       />
     </svg>
   );
-}
+};

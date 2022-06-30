@@ -35,4 +35,4 @@ export const LodgingList = () => {
       })}
     </section>
   );
-}
+};

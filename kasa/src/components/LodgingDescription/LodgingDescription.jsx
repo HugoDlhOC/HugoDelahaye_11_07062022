@@ -58,4 +58,4 @@ export const LodgingDescription = ({ activeLogement }) => {
       </div>
     </section>
   );
-}
+};

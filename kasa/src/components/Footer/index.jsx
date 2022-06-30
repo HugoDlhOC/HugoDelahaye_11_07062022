@@ -12,4 +12,4 @@ export const Footer = () => {
       <p id={"copyrights"}>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
-}
+};
