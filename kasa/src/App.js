@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { LodgingSheet } from "./pages/LodgingSheet";
 import { About } from "./pages/About";
 import { Error } from "./components/Error";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { home, about, lodgingSheet, errorPage } from "./routes";
 
 function App() {

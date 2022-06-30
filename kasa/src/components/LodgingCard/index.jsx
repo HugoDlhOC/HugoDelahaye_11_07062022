@@ -1,5 +1,5 @@
 import "../../styles/style.css";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const LodgingCard = ({ nameLocation, imgLocation, linkNumber }) => {
   return (
